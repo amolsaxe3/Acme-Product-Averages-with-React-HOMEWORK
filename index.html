@@ -101,7 +101,7 @@
         // home functional component for HOME screen display logic. We need only to map products and offerings for number of products and average price.
         const Home = ({companies,products,offering}) => {
             
-            if(companies.length === 0 && offering.length === 0){
+            if(offering.length === 0){
                 return <div>Loading....</div>
             }
             let productOutput = products.map(product => { 
